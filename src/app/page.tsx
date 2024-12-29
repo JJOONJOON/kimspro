@@ -22,9 +22,18 @@ export default function Home() {
   ]
 
   const contactLinks = [
-    { platform: 'WhatsApp', url: 'https://wa.me/821054555332' },
-    { platform: 'Instagram', url: 'https://instagram.com/icanu495' },
-    { platform: 'Telegram', url: 'https://t.me/+T91lpFmixGI4ODBl' },
+    { 
+      platform: 'WhatsApp', 
+      url: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}` 
+    },
+    { 
+      platform: 'Instagram', 
+      url: `https://instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_ID}` 
+    },
+    { 
+      platform: 'Telegram', 
+      url: `https://t.me/${process.env.NEXT_PUBLIC_TELEGRAM_LINK}` 
+    },
   ]
 
   return (
