@@ -31,7 +31,7 @@ export default function Home() {
     <Container>
       <TitleBox>
         <TitleText>
-          KIM's Poker Room
+          Kim&apos;s Poker Room
         </TitleText>
         <Catchphrase>
           <span>Enjoy Safe and</span>

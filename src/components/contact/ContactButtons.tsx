@@ -32,13 +32,6 @@ const Title = styled.h2`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 `
 
-const Subtitle = styled.p`
-  color: var(--light-gold);
-  font-size: 14px;
-  margin: 0;
-  text-align: center;
-`
-
 const ButtonGroup = styled.div`
   display: flex;
   gap: 10px;
