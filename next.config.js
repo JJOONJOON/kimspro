@@ -9,8 +9,8 @@ const nextConfig = {
       use: {
         loader: 'file-loader',
         options: {
-          publicPath: '/_next/static/',
-          outputPath: 'static/',
+          publicPath: '/_next',
+          outputPath: 'static/media/',
           name: '[name].[hash].[ext]',
         },
       },
@@ -20,6 +20,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
 }
 
 module.exports = nextConfig
