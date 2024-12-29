@@ -1,21 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --gold: #C6A052;
+  --dark-gold: #9E7B2E;
+  --light-gold: #E5CC85;
+  --black: #1A1A1A;
+  --dark-blue: #1E2A3B;
+  --white: #FFFFFF;
+  --gray: #F5F5F5;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--dark-blue) url('/images/pattern-bg.png') repeat;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
 }
