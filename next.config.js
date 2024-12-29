@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   images: {
     unoptimized: true,
   },
@@ -10,20 +9,14 @@ const nextConfig = {
       use: {
         loader: 'file-loader',
         options: {
-          publicPath: '/_next',
-          outputPath: 'static/media/',
-          name: '[name].[hash].[ext]',
+          name: '[name].[ext]',
+          publicPath: '/_next/static/media',
+          outputPath: 'static/media',
         },
       },
     });
     return config;
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  poweredByHeader: false,
-  reactStrictMode: true,
-  swcMinify: true,
+  }
 }
 
 module.exports = nextConfig
