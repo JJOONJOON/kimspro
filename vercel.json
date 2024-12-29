@@ -1,5 +1,7 @@
 {
   "version": 2,
-  "framework": "create-react-app",
-  "outputDirectory": "build"
+  "builds": [{
+    "src": "package.json",
+    "use": "@vercel/static-build"
+  }]
 }
